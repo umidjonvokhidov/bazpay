@@ -1,21 +1,30 @@
-export interface NavItemProps {
+declare interface NavItemProps {
   title: string;
   path: string;
 }
 
-export interface PricingCardProps {
+declare type ButtonType = 'primary' | 'secondary' | 'premium';
+
+declare interface ButtonProps {
+  buttonType: ButtonType;
+  children: React.ReactNode;
+  href?: string;
+  className?: string;
+}
+
+declare interface PricingCardProps {
   plan: string;
   description: string;
   pricePerMonth: number;
   features: string[];
 }
 
-export interface FAQProps {
+declare interface FAQProps {
   faq: string;
   answer: string;
 }
 
-export interface BlogPostProps {
+declare interface BlogPostProps {
   image: string;
   date: string;
   title: string;
@@ -24,17 +33,17 @@ export interface BlogPostProps {
   tags: string[];
 }
 
-export interface FooterLinkProps {
+declare interface FooterLinkProps {
   title: string;
   path: string;
 }
 
-export interface FooterCategoryProps {
+declare interface FooterCategoryProps {
   category: string;
   links: FooterLinkProps[];
 }
 
-export interface TeamMemberProps {
+declare interface TeamMemberProps {
   image: string;
   fullName: string;
   job: string;
@@ -42,44 +51,44 @@ export interface TeamMemberProps {
   linkedin: string;
 }
 
-export interface BlogPostV2Props {
+declare interface BlogPostV2Props {
   image: string;
   title: string;
   path: string;
   tags: string[];
 }
 
-export interface StatisticProps {
+declare interface StatisticProps {
   title: string;
   description: string;
 }
 
-export interface MeasureProps {
+declare interface MeasureProps {
   icon: string;
   title: string;
   description: string;
 }
 
-export interface BenefitProps {
+declare interface BenefitProps {
   image: string;
   title: string;
   description?: string;
   icon?: string;
 }
 
-export interface CoreValueProps {
+declare interface CoreValueProps {
   icon: string;
   title: string;
   description: string;
 }
 
-export interface ComparePlanProps {
+declare interface ComparePlanProps {
   plan: string;
   price: string;
   features: string[];
 }
 
-export interface ComparePlanFeatureProps {
+declare interface ComparePlanFeatureProps {
   key: string;
   label: string;
 }
