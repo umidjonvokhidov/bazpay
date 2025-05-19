@@ -1,14 +1,29 @@
-import Link from 'next/link';
+import Button from '@/components/Button';
+import Image from 'next/image';
 
 const NotFound = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
-      <h1 className="text-6xl font-bold text-gray-800">404</h1>
-      <p className="text-xl text-gray-600 mt-4">Page Not Found</p>
-      <Link href="/" className="mt-6 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
-        Go Back Home
-      </Link>
-    </div>
+    <section className="flex-col-center h-screen w-full">
+      <Image
+        src="/assets/images/404.png"
+        width={500}
+        height={238}
+        alt="404"
+        sizes='100vw'
+        className="mx-[95px] my-[112px] max-sm:scale-75"
+      />
+      <div className="flex-col-center gap-y-6 p-6">
+        <div className="flex-col-center gap-y-6">
+          <h2 className="text-grey-800 text-6xl leading-[72px] font-semibold">
+            Oops !
+          </h2>
+          <p className='text-center'>Page not found, please try again or go back Home.</p>
+        </div>
+        <Button href="/" buttonType="secondary">
+          Go to home
+        </Button>
+      </div>
+    </section>
   );
 };
 

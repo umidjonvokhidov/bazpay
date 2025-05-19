@@ -22,12 +22,31 @@
   --color-grey-800: #181d27;
 }
 
+/* Add to your global CSS or a module */
+
 @layer base {
   h1 {
-    @apply text-grey-800 text-7xl leading-[90px] font-bold max-xl:text-6xl max-xl:leading-20 max-md:text-5xl max-md:leading-16 max-sm:text-4xl max-sm:leading-12;
+    @apply text-grey-800 text-7xl leading-[90px] font-semibold max-xl:text-6xl max-xl:leading-20 max-md:text-5xl max-md:leading-16 max-sm:text-4xl max-sm:leading-12;
+  }
+  h2 {
+    @apply text-grey-800 text-5xl leading-[120%] font-bold max-md:text-4xl;
+    font-family: var(--font-roboto), sans-serif;
+  }
+  h3 {
+    @apply text-grey-800 text-2xl leading-8 font-semibold max-md:text-xl max-md:leading-6;
+  }
+  h4 {
+    @apply text-grey-800 text-xl leading-8 font-medium max-md:text-lg max-md:leading-6;
+  }
+  h5 {
+    @apply text-grey-800 text-base leading-8 font-medium;
+  }
+
+  h6 {
+    @apply text-grey-800 text-4xl leading-11 font-semibold max-md:text-3xl max-md:leading-9;
   }
   p {
-    @apply text-grey-700 text-lg leading-7;
+    @apply text-grey-700 text-lg leading-7 font-normal max-md:text-base max-md:leading-6;
   }
 }
 
@@ -40,10 +59,16 @@
   }
 
   .container-spacing-main {
-    @apply px-20 py-24 max-xl:px-12 max-xl:py-16 max-md:px-6 max-md:py-10;
+    @apply w-full px-20 py-24 max-xl:px-12 max-xl:py-16 max-md:px-6 max-md:py-10;
+  }
+  .container-spacing-primary {
+    @apply px-[100px] py-12 max-xl:px-12 max-xl:py-8 max-md:px-4 max-md:py-6;
   }
   .container-spacing-secondary {
-    @apply px-[100px] py-12 max-xl:px-12 max-xl:py-8 max-md:px-4 max-md:py-6;
+    @apply p-[80px] max-xl:p-[60px] max-md:p-[40px];
+  }
+  .flex-col-center {
+    @apply flex flex-col items-center justify-center;
   }
 }
 

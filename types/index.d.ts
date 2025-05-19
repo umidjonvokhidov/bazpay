@@ -36,6 +36,7 @@ declare interface BlogPostProps {
 declare interface FooterLinkProps {
   title: string;
   path: string;
+  cms?: boolean;
 }
 
 declare interface FooterCategoryProps {

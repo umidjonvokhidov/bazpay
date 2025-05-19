@@ -1,9 +1,14 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Roboto } from 'next/font/google';
 import './globals.css';
 
 const interFont = Inter({
   variable: '--font-inter',
+  subsets: ['latin'],
+});
+
+const robotoFont = Roboto({
+  variable: '--font-roboto',
   subsets: ['latin'],
 });
 
@@ -19,7 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${interFont.className} antialiased`}>{children}</body>
+      <body className={`${interFont.className} ${robotoFont.variable} bg-background2 antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }

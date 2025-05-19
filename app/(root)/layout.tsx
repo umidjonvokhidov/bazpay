@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -12,9 +13,10 @@ export default function PagesLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <>
+    <div className="pt-[90px]">
       <Navbar />
       {children}
-    </>
+      <Footer />
+    </div>
   );
 }

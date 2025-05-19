@@ -30,7 +30,7 @@ const Button = ({ buttonType, href, children, className }: ButtonProps) => {
         </defs>
       </svg>
 
-      <div className="bg-grey-800 text-grey-50 rounded-[32px] px-4 py-2 text-base">
+      <div className="bg-grey-800 text-grey-50 rounded-[32px] px-4 py-2 text-base max-sm:w-full">
         {children}
       </div>
       <div className="bg-grey-800 -translate-x-3 rounded-full p-4 transition-all duration-400 group-hover:translate-x-1">
@@ -47,7 +47,7 @@ const Button = ({ buttonType, href, children, className }: ButtonProps) => {
     <Link
       href={href ? href : '#'}
       className={twMerge(
-        'text-grey-800 flex h-12 max-xl:h-11 cursor-pointer items-center justify-center gap-x-2 rounded-[32px] border px-4 py-3 max-xl:px-3 max-xl:py-2 text-base transition-all hover:border-t-4 hover:border-r-4 max-xl:text-sm',
+        'text-grey-800 flex h-12 cursor-pointer items-center justify-center gap-x-2 rounded-[32px] border px-4 py-3 text-base transition-all hover:border-t-4 hover:border-r-4 max-xl:h-11 max-xl:px-3 max-xl:py-2 max-xl:text-sm',
         buttonType === 'primary'
           ? 'bg-background2 border-gray-200'
           : 'bg-secondary-800 border-primary-800 border-0',
