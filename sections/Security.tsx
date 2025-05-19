@@ -23,7 +23,7 @@ const Security = () => {
               Security
             </span>
           </div>
-          <h1 className="text-grey-50 text-center text-6xl leading-[72px] max-lg:text-4xl max-md:leading-12">
+          <h1 className="text-grey-50 h-1_5 text-center">
             Check our premium cards
           </h1>
           <p className="text-grey-50 w-[694px] text-center max-md:w-auto">
@@ -31,7 +31,7 @@ const Security = () => {
             transfers, and all your financial needs.
           </p>
         </div>
-        <div className="relative h-full max-sm:w-[360px] w-[1360px] flex justify-center">
+        <div className="relative flex h-full w-[1360px] justify-center max-sm:w-[360px]">
           <Image
             src="/assets/images/phone-mockup.png"
             width={439}
@@ -56,7 +56,7 @@ const Security = () => {
                 coverflowEffect: {
                   stretch: -60,
                 },
-              }
+              },
             }}
             spaceBetween={28}
             slidesPerView={4}
@@ -72,14 +72,21 @@ const Security = () => {
             className="mt-[125px]"
           >
             {cards.map((image: string, index: number) => (
-              <SwiperSlide key={index} className='flex justify-center items-center'>
-                <Image
-                  src={image}
-                  width={352}
-                  height={211}
-                  className="h-auto max-sm:w-[250px] m-auto"
-                  alt="card"
-                />
+              <SwiperSlide
+                key={index}
+                className="flex items-center justify-center"
+              >
+                <div className="flex-col-center">
+                  <div className="rounded-2xl bg-black/25">
+                    <Image
+                      src={image}
+                      width={352}
+                      height={211}
+                      className="m-auto h-auto max-sm:w-[250px]"
+                      alt="card"
+                    />
+                  </div>
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>

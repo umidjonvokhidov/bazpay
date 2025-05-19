@@ -70,6 +70,13 @@
   .flex-col-center {
     @apply flex flex-col items-center justify-center;
   }
+  .white-card {
+    @apply bg-background2 col-span-3 rounded-3xl px-8 py-10;
+  }
+
+  .h-1_5 {
+    @apply text-6xl leading-[72px] max-lg:text-4xl max-md:leading-12;
+  }
 }
 
 @theme inline {

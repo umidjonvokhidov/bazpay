@@ -34,7 +34,6 @@ const TIandPO = () => {
                   duration={2}
                   decimals={3}
                   enableScrollSpy
-                  
                 />
                 .00
               </h6>
@@ -79,7 +78,7 @@ const TIandPO = () => {
             </div>
           </div>
           <div className="bg-primary-200 flex-col-center group gap-y-8 rounded-2xl px-8 py-10">
-            <div className="bg-grey-50 flex-col-center h-[400px] w-full overflow-hidden rounded-2xl max-md:h-auto">
+            <div className="bg-grey-50 flex-col-center h-[400px] overflow-hidden rounded-2xl max-md:h-auto">
               <Image
                 src="/assets/images/recent-deposits.png"
                 width={517}
