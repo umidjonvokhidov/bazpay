@@ -4,7 +4,7 @@ import Image from 'next/image';
 const OurFeatures = () => {
   return (
     <section className="container-main container-spacing-main">
-      <div className="flex-col-center bg-primary-200 container gap-y-20 rounded-3xl px-10 py-12">
+      <div className="flex-col-center bg-primary-200 container gap-y-20 rounded-3xl px-10 py-12 max-lg:px-8 max-lg:py-10 max-md:py-8 max-md:px-6">
         <div className="flex w-full items-center justify-between gap-4 max-lg:flex-col">
           <h1 className="text-grey-800 h-1_5">Our features</h1>
           <p className="w-[506px] max-lg:w-full max-lg:text-center">
@@ -14,7 +14,7 @@ const OurFeatures = () => {
         </div>
         <div className="flex-col-center w-full gap-y-16">
           <div className="flex-col-center w-full gap-8">
-            <div className="grid w-full grid-cols-5 justify-stretch gap-8  max-lg:flex max-lg:flex-col">
+            <div className="grid w-full grid-cols-5 justify-stretch gap-8 max-lg:flex max-lg:flex-col">
               <div className="white-card flex items-center gap-8 max-md:flex-col">
                 <div className="col-span-3 flex flex-col items-start gap-y-6 max-md:items-center">
                   <h6 className="max-md:text-center">Real-time sync</h6>
@@ -62,7 +62,7 @@ const OurFeatures = () => {
                   src="/assets/images/integrations.svg"
                   width={796}
                   height={152}
-                  className="absolute bottom-[60px] left-1/2 h-auto min-w-[796px] max-md:min-w-[600px] -translate-x-1/2"
+                  className="absolute bottom-[60px] left-1/2 h-auto min-w-[796px] -translate-x-1/2 max-md:min-w-[600px]"
                   alt="ai budget tools chart"
                 />
               </div>
@@ -85,7 +85,7 @@ const OurFeatures = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center gap-6 max-md:gap-4 max-sm:flex-col items-center">
+          <div className="flex items-center justify-center gap-6 max-md:gap-4 max-sm:flex-col">
             <Button href="/contact" buttonType="secondary">
               Contact Us
             </Button>
