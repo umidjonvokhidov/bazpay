@@ -53,10 +53,10 @@ const Investing = () => {
             </div>
             <Image
               src="/assets/images/phone-credit-card.png"
-              width={0}
-              height={0}
+              width={552}
+              height={400}
               sizes="100vw"
-              className="w-full object-contain object-bottom"
+              className="translate-y-10 max-lg:translate-y-8"
               alt="Real-Time Analytics & Reporting"
             />
           </div>
