@@ -45,7 +45,7 @@ export const cards = [
   '/assets/images/credit-card-gray-light.png',
 ];
 
-export const pricingCards = [
+export const pricingCardsV2 = [
   {
     plan: 'Basic plan',
     description: 'Our most popular plan for small teams.',
@@ -82,7 +82,7 @@ export const pricingCards = [
   },
 ];
 
-export const pricingCardsV2 = [
+export const pricingCardsV1 = [
   {
     plan: 'Basic plan',
     description: 'Basic features for up to 10 users.',
