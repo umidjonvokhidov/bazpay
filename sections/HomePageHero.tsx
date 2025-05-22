@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const HomePageHero = () => {
   return (
-    <section className="container-spacing-main container-main">
+    <header className="container-spacing-main container-main">
       <div className="container-main container">
         <div className="flex w-full items-center justify-between gap-x-5 max-xl:flex-col max-xl:gap-y-5">
           <h1 className="w-[750px] max-xl:text-center max-md:w-auto">
@@ -46,7 +46,7 @@ const HomePageHero = () => {
           className="h-auto w-full"
         />
       </div>
-    </section>
+    </header>
   );
 };
 
