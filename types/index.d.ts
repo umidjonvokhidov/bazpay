@@ -24,7 +24,7 @@ declare interface FAQProps {
   answer: string;
 }
 
-declare interface BlogPostProps {
+declare interface LatestBlogPostProps {
   image: string;
   date: string;
   title: string;
@@ -52,7 +52,7 @@ declare interface TeamMemberProps {
   linkedin: string;
 }
 
-declare interface BlogPostV2Props {
+declare interface BlogPostProps {
   image: string;
   title: string;
   path: string;

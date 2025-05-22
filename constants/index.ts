@@ -121,7 +121,7 @@ export const pricingCardsV1 = [
   },
 ];
 
-export const FAQs = [
+export const faqs = [
   {
     faq: 'Does Mazpay have a free trial?',
     answer:
@@ -154,9 +154,9 @@ export const FAQs = [
   },
 ];
 
-export const blogPosts = [
+export const latestBlogPosts = [
   {
-    image: '/assets/images/phone-credit-card.png',
+    image: '/assets/images/card-app-phone.png',
     date: '20 Jan 2025',
     title: 'Simplifying Financial Journeys',
     description:
@@ -258,7 +258,7 @@ export const teams = [
   },
 ];
 
-export const blogPostsV2 = [
+export const blogPosts = [
   {
     image: '',
     title:
