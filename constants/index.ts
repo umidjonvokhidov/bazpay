@@ -179,8 +179,8 @@ export const footerItems = [
   {
     category: 'Product',
     links: [
-      { title: 'Home V1', path: '/home-v1' },
-      { title: 'Home V2', path: '/home-v2' },
+      { title: 'Home V1', path: '/' },
+      { title: 'Home V2', path: '/home' },
       { title: 'Features', path: '/features' },
       { title: 'Pricing', path: '/pricing' },
       { title: 'Pricing details', path: '/pricing-details', cms: true },
