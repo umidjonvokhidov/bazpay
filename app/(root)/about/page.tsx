@@ -9,7 +9,7 @@ const About = () => {
   return (
     <>
       <AboutUs />
-      <Stats />
+      <Stats type="dark" />
       <CoreValues />
       <Team />
       <NewsLetter />

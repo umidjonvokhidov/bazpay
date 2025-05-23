@@ -15,7 +15,6 @@ const Blog = () => {
       <PricingV1 />
       <PricingPlans />
       <MobileApp />
-      <LatestBlogPosts />
     </>
   );
 };

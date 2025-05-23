@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
+@plugin 'tailwind-scrollbar';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -43,7 +44,7 @@
   }
 
   h6 {
-    @apply text-grey-800 text-4xl leading-11 font-semibold max-md:text-3xl max-md:leading-9;
+    @apply text-grey-800 text-4xl leading-11 font-semibold max-md:text-3xl max-md:leading-9 max-sm:text-2xl;
   }
   p {
     @apply text-grey-700 text-lg leading-7 font-normal max-md:text-base max-md:leading-6;
@@ -51,6 +52,14 @@
 }
 
 @layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
 }
 
 @layer components {

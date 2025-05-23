@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       <HomePageHeroV2 />
-      <Stats />
+      <Stats type="white" />
       <SecurityV2 />
       <PayoutAndTransitions />
       <Team />

@@ -215,42 +215,42 @@ export const footerLinks = [
 
 export const teams = [
   {
-    image: '/assets/images/team-member-1.png',
+    image: '/assets/images/team-member-1.jpg',
     fullName: 'Alicia Johnson',
     job: 'UX Designer',
     x: '',
     linkedin: '',
   },
   {
-    image: '/assets/images/team-member-2.png',
+    image: '/assets/images/team-member-2.jpg',
     fullName: 'Michael Brown',
     job: 'Frontend Developer',
     x: '',
     linkedin: '',
   },
   {
-    image: '/assets/images/team-member-3.png',
+    image: '/assets/images/team-member-3.jpg',
     fullName: 'Sophia Martinez',
     job: 'Backend Developer',
     x: '',
     linkedin: '',
   },
   {
-    image: '/assets/images/team-member-4.png',
+    image: '/assets/images/team-member-4.jpg',
     fullName: 'Daniel Smith',
     job: 'Full Stack Developer',
     x: '',
     linkedin: '',
   },
   {
-    image: '/assets/images/team-member-5.png',
+    image: '/assets/images/team-member-5.jpg',
     fullName: 'Emily Davis',
     job: 'UI Designer',
     x: '',
     linkedin: '',
   },
   {
-    image: '/assets/images/team-member-6.png',
+    image: '/assets/images/team-member-6.jpg',
     fullName: 'Olivia Wilson',
     job: 'Product Designer',
     x: '',
@@ -312,7 +312,7 @@ export const measures = [
       'Manage all your bank accounts in one place with a single dashboard.',
   },
   {
-    icon: '/assets/icons/notification.svg',
+    icon: '/assets/icons/notification.png',
     title: 'Instant Notifications',
     description:
       'Stay informed with real-time alerts for transactions, updates, and account activities.',
