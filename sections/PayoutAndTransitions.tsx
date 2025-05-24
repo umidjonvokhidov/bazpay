@@ -37,7 +37,7 @@ const PayoutAndTransitions = () => {
               </div>
             </div>
 
-            <div className="flex flex-col items-start justify-between rounded-2xl bg-[#FBFEF7]">
+            <div className="flex flex-col items-start justify-between rounded-2xl bg-[#F0EEF4]">
               <Image
                 src="/assets/images/live-analytics.png"
                 alt="live-analytics"
