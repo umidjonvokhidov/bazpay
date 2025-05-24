@@ -260,7 +260,7 @@ export const teams = [
 
 export const blogPosts = [
   {
-    image: '',
+    image: '/assets/images/card-on-hand.png',
     title:
       '5 new interesting Ethereum tokens you should pay attention to in 2025.',
     path: '/blog/ethereum-tokens-2025',
@@ -274,7 +274,7 @@ export const blogPosts = [
     tags: ['Financial'],
   },
   {
-    image: '',
+    image: '',  
     title:
       'Is crypto secure? What factors to consider if you will start investing?',
     path: '/blog/crypto-security-tips',

@@ -1,6 +1,6 @@
 'use client';
 
-import PricingCardV1 from '@/components/PricingCardV1';
+import PricingCardV2 from '@/components/PricingCardV2';
 import { pricingCardsV2 } from '@/constants';
 import { useState } from 'react';
 import { twMerge } from 'tailwind-merge';
@@ -59,7 +59,7 @@ const PricingV2 = () => {
         </div>
         <div className="bg-primary-200 flex w-full items-stretch max-md:flex-col rounded-3xl px-6 py-8 max-lg:px-4 max-lg:py-6">
           {pricingCardsV2.map((pricingCard: PricingCardProps) => (
-            <PricingCardV1
+            <PricingCardV2
               key={pricingCard.plan}
               pricingCard={pricingCard}
               pricingPlan={pricingPlan}
