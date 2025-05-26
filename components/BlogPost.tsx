@@ -32,7 +32,7 @@ const BlogPost = ({ blog, index }: { blog: PostProps; index: number }) => {
               </p>
             ))}
           </div>
-          <Link href={blog.path}>
+          <Link href={blog.path} className="flex items-center gap-2">
             <svg
               width="14"
               height="14"

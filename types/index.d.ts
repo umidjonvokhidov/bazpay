@@ -95,3 +95,10 @@ declare interface ComparePlanFeatureProps {
   key: string;
   label: string;
 }
+
+declare interface PostProps {
+  image: string;
+  title: string;
+  path: string;
+  tags: string[];
+}
