@@ -1,5 +1,5 @@
 import LatestBlogPost from '@/components/LatestBlogPost';
-import { latestBlogPosts } from '@/constants';
+import { posts } from '@/constants';
 
 const LatestBlogPosts = () => {
   return (
@@ -18,7 +18,7 @@ const LatestBlogPosts = () => {
           </p>
         </div>
         <div className="grid grid-cols-2 gap-8 max-lg:grid-cols-1">
-          {latestBlogPosts.map((blog: LatestBlogPostProps, index: number) => (
+          {posts.slice(0, 2).map((blog: BlogPostProps, index: number) => (
             <LatestBlogPost blog={blog} key={index} />
           ))}
         </div>

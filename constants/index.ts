@@ -154,24 +154,274 @@ export const faqs = [
   },
 ];
 
-export const latestBlogPosts = [
+export const posts: BlogPostProps[] = [
   {
     image: '/assets/images/card-app-phone.png',
-    date: '20 Jan 2025',
+    date: '2025-01-20T00:00:00Z',
+    duration: 5,
     title: 'Simplifying Financial Journeys',
     description:
       'How do you create compelling presentations that wow your colleagues and impress your managers?',
-    path: '/blog/simplifying-financial-journeys',
+    slug: 'simplifying-financial-journeys',
     tags: ['Design', 'Research', 'Presentation'],
+    category: 'Finance',
+    imageType: 'cover',
+    filter: 'articles',
+    details: `
+      <h2>Simplifying Your Financial Journey with MezPay</h2>
+      <p>Managing your finances can be overwhelming, but with the right tools and strategies, you can take control of your financial future. MezPay offers a user-friendly platform that helps you track expenses, set goals, and make smarter decisions.</p>
+      <h3>1. Centralized Dashboard</h3>
+      <p>View all your accounts and transactions in one place. MezPay’s dashboard provides a clear overview, making it easy to monitor your financial health.</p>
+      <p>Stay organized by categorizing your spending and identifying trends that matter most to you.</p>
+      <h3>2. Personalized Insights</h3>
+      <p>MezPay analyzes your financial data to deliver actionable insights. Receive tailored suggestions to optimize your budget and maximize savings.</p>
+      <hr />
+      <h2>Benefits of a Simplified Financial Experience</h2>
+      <p>With MezPay, you can:</p>
+      <ul>
+        <li>Reduce stress by automating routine tasks</li>
+        <li>Make informed decisions with real-time analytics</li>
+        <li>Set and achieve financial goals with confidence</li>
+        <li>Enjoy a seamless, intuitive user experience</li>
+      </ul>
+      <p>Start your journey to financial clarity and success with MezPay today.</p>
+    `,
   },
   {
     image: '/assets/images/quick-transfers-recent-deposits.png',
-    date: '10 Jan 2025',
+    date: '2025-01-10T00:00:00Z',
+    duration: 4,
     title: 'Insights That Empower Your Finances',
     description:
       'How do you create compelling presentations that wow your colleagues and impress your managers?',
-    path: '/blog/insights-that-empower-your-finances',
+    slug: 'insights-that-empower-your-finances',
     tags: ['Design', 'Research', 'Presentation'],
+    category: 'Finance',
+    imageType: 'contain',
+    filter: 'articles',
+    details: `
+      <h2>How MezPay Fintech Suggestions Work</h2>
+      <p>remote work is no longer just a trend; it has become the new standard for businesses of all sizes. with the shift to remote work, teams need effective tools and strategies to stay connected, organized, and productive. Enova provides a comprehensive platform designed to help remote teams collaborate seamlessly and manage their tasks efficiently. in this guide, we'll explore the best practices and tools you can use to effectively manage remote teams using Enova</p>
+      <h3>1. establish clear communication channels</h3>
+      <p>communication is the backbone of any successful remote team. without face-to-face interactions, it’s essential to set up reliable communication channels to keep everyone informed and aligned.</p>
+      <p>remote work is no longer just a trend; it has become the new standard for businesses of all sizes. with the shift to remote work, teams need effective tools and strategies to stay connected, organized, and productive. Enova provides a comprehensive platform designed to help remote teams collaborate seamlessly and manage their tasks efficiently. in this guide, we'll explore the best practices and tools you can use to effectively manage remote teams using Enova.</p>
+      <h3>2. set clear goals and expectations</h3>
+      <p>communication is the backbone of any successful remote team. without face-to-face interactions, it’s essential to set up reliable communication channels to keep everyone informed and aligned.</p>
+      <p>remote work is no longer just a trend; it has become the new standard for businesses of all sizes. with the shift to remote work, teams need effective tools and strategies to stay connected, organized, and productive. Enova provides a comprehensive platform designed to help remote teams collaborate seamlessly and manage their tasks efficiently. in this guide, we'll explore the best practices and tools you can use to effectively manage remote teams using Enova.</p>
+      <hr />
+      <h2>Key Benefits of AI Design Suggestions</h2>
+      <p>Creating the perfect website is easy with AI-driven suggestions that learn your preferences and guide you towards the best design choices.</p>
+      <p>Step 1: Choose Your Template: Once you're happy with the design, publish your website. AI suggestions ensure you have a professional, brand-consistent site ready for launch.</p>
+      <p>Visual: Publish" button, and an image of a completed, sleek website</p>
+      <p>Step 2: AI Analyzes Your Input: Once you're happy with the design, publish your website. AI suggestions ensure you have a professional, brand-consistent site ready for launch.</p>
+      <p>Visual: Publish" button, and an image of a completed, sleek website</p>
+      <p>Step 3: Refine and Customize: Once you're happy with the design, publish your website. AI suggestions ensure you have a professional, brand-consistent site ready for launch.</p>
+      <p>Visual: Publish" button, and an image of a completed, sleek website</p>
+      <p>Step 4: Publish Your Website: Once you're happy with the design, publish your website. AI suggestions ensure you have a professional, brand-consistent site ready for launch</p>
+      <p>Visual: Publish" button, and an image of a completed, sleek website.</p>
+      <hr />
+      <h2>Key Benefits of AI Design Suggestions</h2>
+      <p>AI-powered design recommendations save you time, improve your website’s aesthetics, and ensure it aligns with your brand identity.</p>
+      <ul>
+        <li><strong>Smart, Data-Driven Design:</strong> AI learns from millions of design patterns and industry trends, helping you make the best choices based on data, not guesswork.</li>
+        <li><strong>Personalized for Your Brand:</strong> The more you customize, the smarter the AI gets—tailoring suggestions specifically to your business, industry, and style preferences.</li>
+        <li><strong>Saves Time and Effort:</strong> Say goodbye to trial and error! AI helps you avoid wasting time on ineffective design choices, letting you focus on your business.</li>
+        <li><strong>No Experience Needed:</strong> Whether you’re a beginner or a seasoned pro, the AI’s easy-to-understand suggestions guide you to create stunning designs effortlessly..</li>
+      </ul>
+    `,
+  },
+  {
+    image: '/assets/images/blog-1.png',
+    date: '2025-01-12T00:00:00Z',
+    duration: 10,
+    title: 'How to protect your finances online security tips for every user',
+    description:
+      'Learn essential tips to keep your finances safe and secure in the digital world.',
+    slug: 'protect-your-finances-online',
+    category: 'Technology',
+    tags: ['Security', 'Finance', 'Tips'],
+    imageType: 'contain',
+    filter: 'resources',
+    details: `
+      <h2>Protecting Your Finances Online: Essential Tips</h2>
+      <p>Online security is more important than ever. Protecting your finances requires vigilance and smart habits. Start by using strong, unique passwords for each account and enable two-factor authentication wherever possible.</p>
+      <h3>1. Recognize Threats</h3>
+      <p>Be cautious of phishing emails and suspicious links. Always verify the sender before clicking or providing sensitive information.</p>
+      <p>Keep your devices updated with the latest security patches and use reputable antivirus software to guard against malware.</p>
+      <h3>2. Monitor Your Accounts</h3>
+      <p>Regularly review your bank and credit card statements for unauthorized transactions. Set up alerts to be notified of any unusual activity.</p>
+      <hr />
+      <h2>Benefits of Staying Secure Online</h2>
+      <p>By following these tips, you can:</p>
+      <ul>
+        <li>Reduce the risk of identity theft</li>
+        <li>Keep your financial data safe</li>
+        <li>Respond quickly to suspicious activity</li>
+        <li>Enjoy peace of mind in your digital life</li>
+      </ul>
+      <p>Stay proactive and protect your finances in the digital world.</p>
+    `,
+  },
+  {
+    image: '/assets/images/blog-2.png',
+    date: '2025-01-14T00:00:00Z',
+    duration: 10,
+    title: 'The future of global payments trends to watch in 2025',
+    description:
+      'Explore the latest trends shaping the future of global payments and what to expect in 2025.',
+    slug: 'global-payments-trends-2025',
+    category: 'Technology',
+    tags: ['Payments', 'Trends', 'Future'],
+    imageType: 'contain',
+    filter: 'news',
+    details: `
+      <h2>The Future of Global Payments: 2025 Trends</h2>
+      <p>The payments industry is evolving rapidly, with new technologies and consumer expectations driving change. In 2025, expect to see:</p>
+      <h3>1. Digital Currencies Rise</h3>
+      <p>More businesses and consumers will adopt digital currencies and blockchain for faster, more secure transactions.</p>
+      <h3>2. Real-Time Payments</h3>
+      <p>Instant, cross-border payments will become the norm, reducing delays and improving transparency.</p>
+      <hr />
+      <h2>Key Benefits of Modern Payment Solutions</h2>
+      <p>Embracing these trends will help you:</p>
+      <ul>
+        <li>Access global markets with ease</li>
+        <li>Reduce transaction costs</li>
+        <li>Enhance payment security</li>
+        <li>Deliver better customer experiences</li>
+      </ul>
+      <p>Stay ahead by adapting to the future of payments today.</p>
+    `,
+  },
+  {
+    image: '/assets/images/blog-3.png',
+    date: '2025-01-16T00:00:00Z',
+    duration: 10,
+    title: '5 ways fintech is changing the way we manage money',
+    description:
+      'Discover how fintech innovations are revolutionizing personal and business finance management.',
+    slug: 'fintech-changing-money-management',
+    category: 'Technology',
+    tags: ['Fintech', 'Money Management', 'Innovation'],
+    imageType: 'contain',
+    filter: 'news',
+    details: `
+      <h2>5 Ways Fintech Is Transforming Money Management</h2>
+      <p>Fintech is revolutionizing how we handle our finances, making money management smarter and more accessible. Here’s how:</p>
+      <h3>1. Automated Savings</h3>
+      <p>Apps now help you save effortlessly by rounding up purchases or setting aside funds automatically.</p>
+      <h3>2. Personalized Insights</h3>
+      <p>AI-driven analytics provide tailored advice to help you spend smarter and save more.</p>
+      <h3>3. Seamless Payments</h3>
+      <p>Send and receive money instantly, whether splitting a bill or paying a vendor.</p>
+      <h3>4. Alternative Lending</h3>
+      <p>Access loans and credit outside traditional banks, often with better rates and faster approval.</p>
+      <h3>5. Enhanced Security</h3>
+      <p>Advanced encryption and fraud detection keep your money safe.</p>
+      <hr />
+      <h2>Fintech Benefits for Everyone</h2>
+      <p>With fintech, you can:</p>
+      <ul>
+        <li>Save time and effort</li>
+        <li>Make informed financial decisions</li>
+        <li>Access new financial opportunities</li>
+        <li>Enjoy greater peace of mind</li>
+      </ul>
+      <p>Embrace fintech to take control of your financial future.</p>
+    `,
+  },
+  {
+    image: '/assets/images/blog-4.png',
+    date: '2025-01-18T00:00:00Z',
+    duration: 10,
+    title: 'Making smarter money choices starts with knowing your stuff!',
+    description:
+      'Understand the importance of device verification and smart money management.',
+    slug: 'smarter-money-choices',
+    category: 'Technology',
+    tags: ['Finance', 'Smart Choices', 'Education'],
+    imageType: 'contain',
+    filter: 'news',
+    details: `
+      <h2>Making Smarter Money Choices</h2>
+      <p>Smart money management starts with knowledge. Understanding your finances and using the right tools can help you make better decisions every day.</p>
+      <h3>1. Track and Analyze</h3>
+      <p>Use apps to monitor your spending, set budgets, and identify areas for improvement.</p>
+      <h3>2. Secure Your Devices</h3>
+      <p>Device verification adds an extra layer of protection, keeping your accounts safe from unauthorized access.</p>
+      <hr />
+      <h2>Benefits of Financial Education</h2>
+      <p>By staying informed, you can:</p>
+      <ul>
+        <li>Build healthy financial habits</li>
+        <li>Protect your assets</li>
+        <li>Reach your goals faster</li>
+        <li>Feel confident in your decisions</li>
+      </ul>
+      <p>Empower yourself with knowledge and make smarter money choices every day.</p>
+    `,
+  },
+  {
+    image: '/assets/images/blog-5.png',
+    date: '2025-01-20T00:00:00Z',
+    duration: 10,
+    title: 'Steer your financial future with a little confidence!',
+    description:
+      'Take control of your finances with confidence using modern analytics tools.',
+    slug: 'steer-your-financial-future',
+    category: 'Technology',
+    tags: ['Finance', 'Confidence', 'Analytics'],
+    imageType: 'contain',
+    filter: 'news',
+    details: `
+      <h2>Steer Your Financial Future with Confidence</h2>
+      <p>Confidence is key to financial success. With the right analytics tools, you can understand your spending, set achievable goals, and track your progress.</p>
+      <h3>1. Visualize Your Finances</h3>
+      <p>Modern dashboards make it easy to see where your money goes and spot opportunities to save.</p>
+      <h3>2. Set and Achieve Goals</h3>
+      <p>Define your financial objectives and use data-driven insights to stay on track.</p>
+      <hr />
+      <h2>Why Confidence Matters</h2>
+      <p>With confidence and the right tools, you can:</p>
+      <ul>
+        <li>Make informed decisions</li>
+        <li>Adapt to financial challenges</li>
+        <li>Grow your wealth over time</li>
+        <li>Enjoy greater financial freedom</li>
+      </ul>
+      <p>Start building your financial confidence today.</p>
+    `,
+  },
+  {
+    image: '/assets/images/blog-6.png',
+    date: '2025-01-22T00:00:00Z',
+    duration: 10,
+    title: 'Welcome to the MezPay simplifying your financial adventure!',
+    description:
+      'See how MezPay makes your financial journey easier and more transparent.',
+    slug: 'simplifying-your-financial-adventure',
+    category: 'Technology',
+    tags: ['MezPay', 'Finance', 'Adventure'],
+    imageType: 'contain',
+    filter: 'news',
+    details: `
+      <h2>Welcome to MezPay: Simplifying Your Financial Adventure</h2>
+      <p>MezPay is designed to make your financial life easier and more transparent. With a unified dashboard, you can manage all your accounts and transactions in one place.</p>
+      <h3>1. Real-Time Analytics</h3>
+      <p>Get instant insights into your spending and saving patterns, helping you make smarter decisions.</p>
+      <h3>2. Secure Transfers</h3>
+      <p>Send and receive money with confidence, knowing your data is protected by advanced encryption.</p>
+      <hr />
+      <h2>Start Your Adventure</h2>
+      <p>With MezPay, you benefit from:</p>
+      <ul>
+        <li>Transparent pricing and no hidden fees</li>
+        <li>Easy-to-use tools for every financial need</li>
+        <li>Support for your financial goals</li>
+        <li>A seamless, enjoyable experience</li>
+      </ul>
+      <p>Begin your financial adventure with MezPay today!</p>
+    `,
   },
 ];
 
@@ -274,7 +524,7 @@ export const blogPosts = [
     tags: ['Financial'],
   },
   {
-    image: '',  
+    image: '',
     title:
       'Is crypto secure? What factors to consider if you will start investing?',
     path: '/blog/crypto-security-tips',

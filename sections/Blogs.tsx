@@ -18,7 +18,7 @@ const Blogs = () => {
           </Button>
         </div>
         <div className="grid grid-cols-2 gap-x-16 gap-y-[35px] max-lg:grid-cols-1">
-          {blogPosts.map((post: BlogPostProps, index: number) => (
+          {blogPosts.map((post: PostProps, index: number) => (
             <BlogPost blog={post} key={index} index={index} />
           ))}
         </div>

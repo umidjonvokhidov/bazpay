@@ -24,15 +24,6 @@ declare interface FAQProps {
   answer: string;
 }
 
-declare interface LatestBlogPostProps {
-  image: string;
-  date: string;
-  title: string;
-  description: string;
-  path: string;
-  tags: string[];
-}
-
 declare interface FooterLinkProps {
   title: string;
   path: string;
@@ -52,11 +43,22 @@ declare interface TeamMemberProps {
   linkedin: string;
 }
 
+type ImageType = 'cover' | 'contain';
+
+type FilterType = 'articles' | 'resources' | 'news' | '';
+
 declare interface BlogPostProps {
   image: string;
+  imageType: ImageType;
+  details: string;
+  category: string;
+  slug: string;
+  date: string;
+  duration: number;
   title: string;
-  path: string;
+  description: string;
   tags: string[];
+  filter: FilterType;
 }
 
 declare interface StatisticProps {

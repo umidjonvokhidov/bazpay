@@ -4,11 +4,11 @@ import MobileApp from '@/sections/MobileApp';
 import { useParams } from 'next/navigation';
 
 const BlogDetails = () => {
-  const { id } = useParams();
+  const { slug } = useParams();
 
   return (
     <>
-      <section>Blog ID: {id}</section>
+      <section>Blog Slug: {slug}</section>
       <MobileApp />
     </>
   );

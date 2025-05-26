@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { twMerge } from 'tailwind-merge';
 
-const BlogPost = ({ blog, index }: { blog: BlogPostProps; index: number }) => {
+const BlogPost = ({ blog, index }: { blog: PostProps; index: number }) => {
   return (
     <div
       className={twMerge(
