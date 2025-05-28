@@ -45,7 +45,9 @@ const PricingCardV2 = ({ pricingCard, pricingPlan }: PricingCardsV1Props) => {
             />
           </svg>
           <h2 className={isBusinessPlan ? 'text-grey-50' : 'text-grey-600'}>
-            {pricingPlan === 'monthly' ? pricePerMonth : pricePerMonth * 0.8}
+            {pricingPlan === 'monthly'
+              ? pricePerMonth
+              : (pricePerMonth * 0.8).toFixed(0)}{' '}
           </h2>
           <p className={isBusinessPlan ? 'text-grey-50' : 'text-grey-600'}>
             {pricingPlan === 'monthly' ? 'per month' : 'per year'}
