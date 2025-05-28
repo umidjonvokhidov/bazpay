@@ -593,7 +593,7 @@ export const footerItems = [
 ];
 
 export const footerLinks = [
-  { title: 'Terms', path: '/terms-of-service' },
+  { title: 'Terms', path: '/terms-of-services' },
   { title: 'Privacy', path: '/privacy-policy' },
   { title: 'Cookies', path: '/cookies' },
 ];
