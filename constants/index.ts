@@ -581,7 +581,6 @@ export const footerItems = [
     category: 'Utilities',
     links: [
       { title: 'License', path: '/license' },
-      { title: 'Password Protection', path: '/password-protection' },
       { title: 'Privacy Policy', path: '/privacy-policy' },
       { title: 'Terms of Services', path: '/terms-of-services' },
       { title: '404', path: '/404' },
