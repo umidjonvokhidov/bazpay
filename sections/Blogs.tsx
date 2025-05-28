@@ -1,6 +1,6 @@
 import BlogPost from '@/components/BlogPost';
 import Button from '@/components/Button';
-import { blogPosts } from '@/constants';
+import { posts } from '@/constants';
 
 const Blogs = () => {
   return (
@@ -18,7 +18,7 @@ const Blogs = () => {
           </Button>
         </div>
         <div className="grid grid-cols-2 gap-x-16 gap-y-[35px] max-lg:grid-cols-1">
-          {blogPosts.map((post: PostProps, index: number) => (
+          {posts.slice(-4).map((post: BlogPostProps, index: number) => (
             <BlogPost blog={post} key={index} index={index} />
           ))}
         </div>

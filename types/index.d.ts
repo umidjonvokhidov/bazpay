@@ -8,13 +8,18 @@ declare type ButtonType = 'primary' | 'secondary' | 'premium';
 declare interface ButtonProps {
   buttonType: ButtonType;
   children: React.ReactNode;
+  arrowTheme?: 'white' | 'black';
+  buttonClassName?: string;
   href?: string;
+  type?: 'button' | 'submit' | 'reset';
   className?: string;
 }
 
 declare interface PricingCardProps {
   plan: string;
+  slug: string;
   description: string;
+  inclusive?: string;
   pricePerMonth: number;
   features: string[];
 }
@@ -87,6 +92,7 @@ declare interface CoreValueProps {
 
 declare interface ComparePlanProps {
   plan: string;
+  slug: string;
   price: string;
   features: string[];
 }

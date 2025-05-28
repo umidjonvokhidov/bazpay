@@ -17,7 +17,7 @@ const PricingCardV2 = ({ pricingCard, pricingPlan }: PricingCardsV1Props) => {
         isBusinessPlan ? 'bg-grey-800' : 'bg-transparent'
       )}
     >
-      <div className="flex items-center justify-between p-8 max-lg:flex-col max-md:flex-row max-lg:items-start max-md:items-center gap-y-4 max-sm:flex-col max-sm:items-start">
+      <div className="flex items-center justify-between gap-y-4 p-8 max-lg:flex-col max-lg:items-start max-md:flex-row max-md:items-center max-sm:flex-col max-sm:items-start">
         <div className="flex flex-col items-start gap-y-1">
           <h3 className={isBusinessPlan ? 'text-grey-50' : 'text-grey-600'}>
             {plan}{' '}
@@ -83,7 +83,7 @@ const PricingCardV2 = ({ pricingCard, pricingPlan }: PricingCardsV1Props) => {
             </p>
           )}
         </div>
-        <div className="grid w-full grid-cols-2 max-lg:grid-cols-1 gap-x-8 gap-y-4">
+        <div className="grid w-full grid-cols-2 gap-x-8 gap-y-4 max-lg:grid-cols-1">
           {features.map((value: string, index: number) => (
             <div key={index} className="flex items-center gap-3">
               <svg
@@ -118,6 +118,7 @@ const PricingCardV2 = ({ pricingCard, pricingPlan }: PricingCardsV1Props) => {
       </div>
       <div className="p-8">
         <Button
+          href={`pricing/${pricingCard.slug}`}
           buttonType={isBusinessPlan ? 'secondary' : 'primary'}
           className={!isBusinessPlan ? 'border-grey-800 bg-transparent' : ''}
         >

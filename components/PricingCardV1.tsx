@@ -36,7 +36,7 @@ const PricingCardV1 = ({ pricingCard }: { pricingCard: PricingCardProps }) => {
             {pricingCard.description}
           </h5>
         </div>
-        <Button buttonType="secondary" className="h-10 w-full">
+        <Button buttonType="secondary" className="h-10 w-full" href={`pricing/${pricingCard.slug}`}>
           Get Started
         </Button>
       </div>

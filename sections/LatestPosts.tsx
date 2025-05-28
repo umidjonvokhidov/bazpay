@@ -17,7 +17,7 @@ const LatestPosts = () => {
   const selectedFilter = searchParams.get('category') || '';
 
   const filteredPosts = posts
-    .slice(2)
+    .slice(2, -4)
     .filter((post: BlogPostProps) =>
       !selectedFilter ? true : post.filter === selectedFilter
     );

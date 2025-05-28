@@ -48,8 +48,9 @@ export const cards = [
 export const pricingCardsV2 = [
   {
     plan: 'Basic plan',
+    slug: 'basic-plan',
     description: 'Our most popular plan for small teams.',
-    pricePerMonth: 10,
+    pricePerMonth: 17,
     features: [
       'All Starter Plan features',
       'Basic reporting + analytics',
@@ -65,8 +66,9 @@ export const pricingCardsV2 = [
   },
   {
     plan: 'Business plan',
+    slug: 'business-plan',
     description: 'Advanced features and reporting.',
-    pricePerMonth: 20,
+    pricePerMonth: 29,
     features: [
       'All Pro Plan features',
       'Basic reporting + analytics',
@@ -85,39 +87,64 @@ export const pricingCardsV2 = [
 export const pricingCardsV1 = [
   {
     plan: 'Basic plan',
+    slug: 'basic-plan',
     description: 'Basic features for up to 10 users.',
-    pricePerMonth: 10,
+    pricePerMonth: 17,
     features: [
-      'Access to core features',
-      'Key insights and analytics tools',
-      'Support for 10 accounts',
-      '20 GB of storage per user',
-      'Basic chat and email support',
+      'Access to all essential features',
+      'Up to 10 users',
+      'Basic analytics dashboard',
+      '20 GB secure cloud storage per user',
+      'Email and chat support',
+      'Mobile app access',
+      'Community resources',
+      'Regular updates',
     ],
+    inclusive: `<p>The Basic plan is designed for individuals and small teams who need essential tools to get started. It provides access for up to 10 users, secure cloud storage, and a suite of basic analytics to help you monitor and manage your finances with ease. With this plan, you can take advantage of our intuitive dashboard, set up your accounts quickly, and start tracking your progress from day one.</p>
+<p>Enjoy peace of mind with standard support and regular updates that keep your tools running smoothly. The Basic plan also includes mobile access, so you can manage your finances on the go, and seamless integration with community resources to help you learn and grow. Whether you’re just starting out or need a reliable solution for your small team, this plan covers all the essentials without unnecessary complexity.</p>
+<p>Get started quickly with helpful onboarding, clear documentation, and a user-friendly interface designed to minimize your learning curve. The Basic plan is the ideal foundation for your financial journey, offering everything you need to organize, track, and manage your finances efficiently while leaving room to upgrade as your needs evolve.</p>`,
   },
   {
     plan: 'Business plan',
-    description: 'Basic features for up to 10 users.',
-    pricePerMonth: 10,
+    slug: 'business-plan',
+    description: 'Advanced features for unlimited users.',
+    pricePerMonth: 29,
     features: [
-      'Access to core features',
-      'Key insights and analytics tools',
-      'Support for 10 accounts',
-      '20 GB of storage per user',
-      'Basic chat and email support',
+      'Everything in Basic plan',
+      'Unlimited users',
+      'Advanced analytics & reporting',
+      'Workflow automation tools',
+      'Premium integrations (Slack, Zapier, etc.)',
+      'Priority email & chat support',
+      'Team management features',
+      'Role-based access controls',
+      'Custom branding options',
+      'Onboarding assistance',
     ],
+    inclusive: `<p>The Business plan is ideal for growing teams and companies that require more advanced features and flexibility. It offers unlimited users, advanced analytics and reporting, workflow automation, premium integrations, and priority support. This plan is designed to help your business scale efficiently, streamline operations, and make data-driven decisions with confidence.</p>
+<p>With enhanced team management capabilities, you can assign roles, set permissions, and collaborate seamlessly across departments. Custom branding options allow you to tailor the platform to your company’s identity, while onboarding assistance ensures your team is up and running quickly. Benefit from premium integrations with popular business tools, and enjoy priority support for fast, reliable help whenever you need it.</p>
+<p>The Business plan empowers your organization to stay ahead in a competitive landscape by providing the tools and support necessary for growth. Unlock powerful automation features, detailed analytics, and advanced controls that help you optimize workflows, improve productivity, and deliver better results for your clients and stakeholders.</p>`,
   },
   {
     plan: 'Enterprise plan',
-    description: 'Basic features for up to 10 users.',
-    pricePerMonth: 10,
+    slug: 'enterprise-plan',
+    description: 'Enterprise-grade features for large organizations.',
+    pricePerMonth: 99,
     features: [
-      'Access to core features',
-      'Key insights and analytics tools',
-      'Support for 10 accounts',
-      '20 GB of storage per user',
-      'Basic chat and email support',
+      'Everything in Business plan',
+      'Dedicated account manager',
+      'Custom integrations & API access',
+      'Enterprise-grade security & compliance',
+      'Single Sign-On (SSO) support',
+      'Advanced user permissions',
+      'Custom onboarding & training',
+      'Service Level Agreement (SLA)',
+      '24/7 priority support',
+      'Quarterly business reviews',
     ],
+    inclusive: `<p>The Enterprise plan is tailored for large organizations with complex needs and high demands for customization, security, and support. It includes everything in the Business plan, plus a dedicated account manager, custom integrations, enterprise-grade security, SSO support, advanced permissions, custom onboarding, SLA, and 24/7 priority support. This plan is built to handle the most demanding environments and compliance requirements.</p>
+<p>Experience white-glove onboarding, quarterly business reviews, and a partnership approach to your success. The Enterprise plan offers advanced user management, granular access controls, and the ability to integrate with your existing IT infrastructure. Benefit from custom API access, enhanced reporting, and dedicated resources to ensure your organization’s unique requirements are met.</p>
+<p>This plan is perfect for organizations that demand reliability, scalability, and personalized solutions. With enterprise-level compliance, proactive monitoring, and a dedicated support team available around the clock, you can focus on your business goals knowing that your financial operations are secure, efficient, and fully supported at every step.</p>`,
   },
 ];
 
@@ -423,6 +450,111 @@ export const posts: BlogPostProps[] = [
       <p>Begin your financial adventure with MezPay today!</p>
     `,
   },
+  {
+    image: '/assets/images/card-on-hand.png',
+    date: '2025-01-25T00:00:00Z',
+    duration: 7,
+    title:
+      '5 new interesting Ethereum tokens you should pay attention to in 2025.',
+    description:
+      'Discover the most promising Ethereum tokens that could shape the crypto landscape in 2025.',
+    slug: 'ethereum-tokens-2025',
+    tags: ['Crypto'],
+    category: 'Cryptocurrency',
+    imageType: 'cover',
+    filter: 'news',
+    details: `
+      <h2>Top Ethereum Tokens for 2025</h2>
+      <p>2025 is shaping up to be a pivotal year for Ethereum and its ecosystem. With the rise of decentralized finance (DeFi), NFTs, and new Layer 2 solutions, several tokens are emerging as leaders in innovation and adoption. In this article, we highlight five Ethereum-based tokens that are gaining traction and could play a significant role in the coming year.</p>
+      <ul>
+        <li><strong>Token A:</strong> Revolutionizing DeFi with automated yield strategies and cross-chain compatibility, Token A is attracting both retail and institutional investors.</li>
+        <li><strong>Token B:</strong> A next-generation NFT platform that enables creators to mint, trade, and showcase digital assets with unprecedented ease and security.</li>
+        <li><strong>Token C:</strong> Focused on sustainability, Token C leverages Ethereum’s smart contracts to support green initiatives and carbon offset projects.</li>
+        <li><strong>Token D:</strong> Privacy-focused, Token D brings zero-knowledge proofs and confidential transactions to the Ethereum network, enhancing user anonymity.</li>
+        <li><strong>Token E:</strong> Leading the charge in cross-chain interoperability, Token E allows seamless asset transfers between Ethereum and other major blockchains.</li>
+      </ul>
+      <p>Each of these tokens is backed by strong development teams, active communities, and real-world use cases. As always, do your own research and consider the risks before investing in any cryptocurrency.</p>
+      <p>Stay ahead of the curve by understanding the technology, governance, and market trends driving these projects. 2025 could be the year these tokens make a lasting impact on the Ethereum ecosystem and beyond.</p>
+    `,
+  },
+  {
+    image: '/assets/images/card-on-hand.png',
+    date: '2025-01-26T00:00:00Z',
+    duration: 6,
+    title:
+      'The new Crypto verse X 2.0 app is now available to download in IOS and Android.',
+    description:
+      'Experience the next evolution of crypto management with Crypto verse X 2.0, now on your favorite devices.',
+    slug: 'crypto-verse-x-2.0',
+    tags: ['Financial'],
+    category: 'Apps',
+    imageType: 'cover',
+    filter: 'news',
+    details: `
+      <h2>Crypto verse X 2.0 Launch: What’s New?</h2>
+      <p>The much-anticipated Crypto verse X 2.0 app is here, bringing a host of new features and improvements for crypto enthusiasts. Available on both iOS and Android, this update focuses on security, usability, and powerful portfolio management tools.</p>
+      <ul>
+        <li><strong>Enhanced Security:</strong> Biometric authentication, multi-factor login, and advanced encryption keep your assets safe.</li>
+        <li><strong>Real-time Portfolio Tracking:</strong> Monitor your holdings, view historical performance, and set custom alerts for price movements.</li>
+        <li><strong>Integrated News & Alerts:</strong> Stay informed with curated news feeds, push notifications, and market analysis directly in the app.</li>
+        <li><strong>Multi-wallet Support:</strong> Manage multiple wallets and accounts from a single dashboard, making it easy to diversify and organize your assets.</li>
+        <li><strong>Seamless Transactions:</strong> Buy, sell, and transfer crypto with low fees and instant confirmations.</li>
+      </ul>
+      <p>Crypto verse X 2.0 is designed for both beginners and experienced users, offering a clean interface and helpful onboarding guides. Download now and take control of your crypto journey with confidence and convenience.</p>
+    `,
+  },
+  {
+    image: '/assets/images/card-on-hand.png',
+    date: '2025-01-27T00:00:00Z',
+    duration: 5,
+    title:
+      'Is crypto secure? What factors to consider if you will start investing?',
+    description:
+      'A comprehensive guide to evaluating the security of cryptocurrencies before making your first investment.',
+    slug: 'crypto-security-tips',
+    tags: ['Financial', 'Tips'],
+    category: 'Security',
+    imageType: 'cover',
+    filter: 'resources',
+    details: `
+      <h2>Crypto Security: What You Need to Know Before Investing</h2>
+      <p>Investing in cryptocurrencies can be rewarding, but it also comes with unique security challenges. This guide covers the essential factors to consider before making your first crypto investment.</p>
+      <ul>
+        <li><strong>Choosing Secure Wallets:</strong> Understand the differences between hot and cold wallets, and learn how to select the right storage solution for your needs.</li>
+        <li><strong>Recognizing Scams & Phishing:</strong> Identify common tactics used by scammers and how to avoid falling victim to fraudulent schemes.</li>
+        <li><strong>Private Key Management:</strong> Best practices for generating, storing, and backing up your private keys to prevent loss or theft.</li>
+        <li><strong>Staying Updated:</strong> Follow reputable sources and stay informed about the latest security vulnerabilities and patches in the crypto space.</li>
+        <li><strong>Regulatory Considerations:</strong> Be aware of the legal landscape in your region and how regulations may impact your investments.</li>
+      </ul>
+      <p>By following these guidelines, you can minimize risks and protect your digital assets as you enter the world of cryptocurrency investing.</p>
+    `,
+  },
+  {
+    image: '/assets/images/card-on-hand.png',
+    date: '2025-01-28T00:00:00Z',
+    duration: 5,
+    title:
+      'Is crypto secure? What factors to consider if you will start investing?',
+    description:
+      'Essential considerations for new investors entering the world of Web3 and decentralized finance.',
+    slug: 'web3-investing',
+    tags: ['Web 3'],
+    category: 'Web3',
+    imageType: 'cover',
+    filter: 'resources',
+    details: `
+      <h2>Web3 Investing: Security and Strategy for Newcomers</h2>
+      <p>Web3 and decentralized finance (DeFi) are transforming how we interact with digital assets, but they also introduce new risks and complexities. Here’s what you need to know before investing in Web3 projects.</p>
+      <ul>
+        <li><strong>Understanding Smart Contracts:</strong> Learn how smart contracts work, their benefits, and the potential vulnerabilities that can lead to exploits.</li>
+        <li><strong>Evaluating Project Teams & Communities:</strong> Research the people behind the project, their track record, and the strength of their community support.</li>
+        <li><strong>Managing Risk in DeFi Platforms:</strong> Diversify your investments, use reputable platforms, and understand the risks of impermanent loss and protocol failures.</li>
+        <li><strong>Security Tools:</strong> Use hardware wallets, multisig solutions, and audit reports to enhance your safety.</li>
+        <li><strong>Staying Informed:</strong> Join forums, follow industry leaders, and participate in community discussions to keep up with the latest trends and threats.</li>
+      </ul>
+      <p>With the right knowledge and precautions, you can navigate the Web3 landscape and take advantage of its opportunities while minimizing your exposure to risk.</p>
+    `,
+  },
 ];
 
 export const footerItems = [
@@ -505,37 +637,6 @@ export const teams = [
     job: 'Product Designer',
     x: '',
     linkedin: '',
-  },
-];
-
-export const blogPosts = [
-  {
-    image: '/assets/images/card-on-hand.png',
-    title:
-      '5 new interesting Ethereum tokens you should pay attention to in 2025.',
-    path: '/blog/ethereum-tokens-2025',
-    tags: ['Crypto'],
-  },
-  {
-    image: '',
-    title:
-      'The new Crypto verse X 2.0 app is now available to download in IOS and Android.',
-    path: '/blog/crypto-verse-x-2.0',
-    tags: ['Financial'],
-  },
-  {
-    image: '',
-    title:
-      'Is crypto secure? What factors to consider if you will start investing?',
-    path: '/blog/crypto-security-tips',
-    tags: ['Financial', 'Tips'],
-  },
-  {
-    image: '',
-    title:
-      'Is crypto secure? What factors to consider if you will start investing?',
-    path: '/blog/web3-investing',
-    tags: ['Web 3'],
   },
 ];
 
@@ -635,7 +736,32 @@ export const coreValues = [
 export const comparePlans = [
   {
     plan: 'Basic',
+    slug: 'basic-plan',
     price: '$19/mo',
+    features: [
+      'emailSupport',
+      'realtimeAnalytics',
+      'userAnalytics',
+      'funnelOptimization',
+    ],
+  },
+  {
+    plan: 'Business',
+    price: '$99/mo',
+    slug: 'business-plan',
+    features: [
+      'emailSupport',
+      'realtimeAnalytics',
+      'userAnalytics',
+      'funnelOptimization',
+      'automated',
+      'advancedCharts',
+    ],
+  },
+  {
+    plan: 'Enterprise',
+    price: '$409/mo',
+    slug: 'enterprise-plan',
     features: [
       'emailSupport',
       'realtimeAnalytics',
@@ -646,30 +772,6 @@ export const comparePlans = [
       'advancedCharts',
       'teamGoalSetting',
       'realTimeTeamReports',
-    ],
-  },
-  {
-    plan: 'Business',
-    price: '$99/mo',
-    features: [
-      'emailSupport',
-      'realtimeAnalytics',
-      'userAnalytics',
-      'funnelOptimization',
-      'automated',
-      'collaborationTools',
-      'advancedCharts',
-      'teamGoalSetting',
-    ],
-  },
-  {
-    plan: 'Enterprise',
-    price: '$409/mo',
-    features: [
-      'emailSupport',
-      'realtimeAnalytics',
-      'userAnalytics',
-      'funnelOptimization',
     ],
   },
 ];
@@ -688,10 +790,6 @@ export const comparePlansFeatures = [
     label: 'User analytics',
   },
   {
-    key: 'funnelOptimization',
-    label: 'Funnel optimization',
-  },
-  {
     key: 'automated',
     label: 'Automated',
   },
@@ -706,6 +804,10 @@ export const comparePlansFeatures = [
   {
     key: 'teamGoalSetting',
     label: 'Team goal setting',
+  },
+  {
+    key: 'funnelOptimization',
+    label: 'Funnel optimization',
   },
   {
     key: 'realTimeTeamReports',

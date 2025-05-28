@@ -2,12 +2,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { twMerge } from 'tailwind-merge';
 
-const BlogPost = ({ blog, index }: { blog: PostProps; index: number }) => {
+const BlogPost = ({ blog, index }: { blog: BlogPostProps; index: number }) => {
   return (
     <div
       className={twMerge(
         'flex flex-col gap-6',
-        index === 0 ? 'row-span-3 max-lg:row-span-1' : 'border-b border-grey-300'
+        index === 0
+          ? 'row-span-3 max-lg:row-span-1'
+          : 'border-grey-300 border-b'
       )}
     >
       {index === 0 && blog.image !== '' && (
@@ -32,7 +34,7 @@ const BlogPost = ({ blog, index }: { blog: PostProps; index: number }) => {
               </p>
             ))}
           </div>
-          <Link href={blog.path} className="flex items-center gap-2">
+          <Link href={`/blog/${blog.slug}`} className="flex items-center gap-2">
             <svg
               width="14"
               height="14"
@@ -47,7 +49,7 @@ const BlogPost = ({ blog, index }: { blog: PostProps; index: number }) => {
             </svg>
           </Link>
         </div>
-        <h4 className="font-semibold max-w-[480px]">{blog.title}</h4>
+        <h4 className="max-w-[480px] font-semibold">{blog.title}</h4>
       </div>
     </div>
   );

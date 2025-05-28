@@ -1,6 +1,5 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
-@plugin 'tailwind-scrollbar';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -60,11 +59,37 @@
   .scrollbar-hide::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera */
   }
+  .shadow-3xl {
+    box-shadow:
+      0px 32px 64px -12px
+        var(--Colors-Effects-Shadows-shadow-3xl_01, rgba(10, 13, 18, 0.14)),
+      0px 5px 5px -2.5px
+        var(--Colors-Effects-Shadows-shadow-3xl_02, rgba(10, 13, 18, 0.04));
+  }
 }
 
 @layer components {
   .container-main {
     @apply flex w-full flex-col items-center justify-center gap-y-20 max-xl:gap-y-16;
+  }
+
+  .post-details-container hr {
+    @apply my-12;
+  }
+  .post-details-container p {
+    @apply text-grey-600 pb-4;
+  }
+  .post-details-container h3 {
+    @apply text-grey-700 pb-4 text-xl leading-tight font-medium;
+  }
+  .post-details-container h2 {
+    @apply text-grey-800 pb-8 text-4xl leading-11 font-semibold;
+  }
+  .post-details-container ul {
+    @apply flex flex-col items-start gap-y-4 text-base;
+  }
+  .post-details-container li {
+    @apply text-grey-600 text-base font-normal;
   }
 
   .container-spacing-main {
