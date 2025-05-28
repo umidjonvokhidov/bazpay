@@ -565,7 +565,7 @@ export const footerItems = [
       { title: 'Home V2', path: '/home' },
       { title: 'Features', path: '/features' },
       { title: 'Pricing', path: '/pricing' },
-      { title: 'Pricing details', path: '/pricing-details', cms: true },
+      { title: 'Pricing details', path: '/pricing/basic-plan', cms: true },
     ],
   },
   {
@@ -573,7 +573,11 @@ export const footerItems = [
     links: [
       { title: 'About', path: '/about' },
       { title: 'Blog', path: '/blog' },
-      { title: 'Blog details', path: '/blog-details', cms: true },
+      {
+        title: 'Blog details',
+        path: '/blog/simplifying-financial-journeys',
+        cms: true,
+      },
       { title: 'Contact', path: '/contact' },
     ],
   },
