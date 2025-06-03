@@ -6,12 +6,6 @@ import Image from 'next/image';
 import { cache } from 'react';
 import { twMerge } from 'tailwind-merge';
 
-interface BlogPostPageProps {
-  params: {
-    slug: string;
-  };
-}
-
 export async function generateStaticParams() {
   const blogPosts = posts;
 
@@ -24,7 +18,11 @@ const getBlogPost = cache(async (slug: string) => {
   return posts.find((post) => post.slug === slug);
 });
 
-export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
   const { slug } = params;
   const blog = await getBlogPost(slug);
   return {
@@ -41,7 +39,11 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   };
 }
 
-export default async function BlogDetails({ params }: BlogPostPageProps) {
+export default async function BlogDetails({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const { slug } = params;
   const blog = await getBlogPost(slug);
 

@@ -2,14 +2,9 @@ import NotFound from '@/app/not-found';
 import { pricingCardsV1 } from '@/constants';
 import MobileApp from '@/sections/MobileApp';
 import PricingDetail from '@/sections/PricingDetail';
+import { Metadata } from 'next';
 
 import { cache } from 'react';
-
-interface PricingCardPageProps {
-  params: {
-    slug: string;
-  };
-}
 
 export async function generateStaticParams() {
   return pricingCardsV1.map((plan) => ({
@@ -17,7 +12,11 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: PricingCardPageProps) {
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
   const { slug } = params;
   const pricingCard = pricingCardV1(slug);
 
@@ -33,7 +32,11 @@ const pricingCardV1 = cache((slug: string) => {
   return pricingCardsV1.find((plan) => plan.slug === slug);
 });
 
-export default async function PricingDetails({ params }: PricingCardPageProps) {
+export default async function PricingDetails({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const { slug } = params;
   const pricingCard = pricingCardV1(slug);
 
