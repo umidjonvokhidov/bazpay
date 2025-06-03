@@ -1,4 +1,3 @@
-import type { Metadata } from 'next';
 import { Inter, Roboto } from 'next/font/google';
 import './globals.css';
 
@@ -11,18 +10,6 @@ const robotoFont = Roboto({
   variable: '--font-roboto',
   subsets: ['latin'],
 });
-
-export const metadata: Metadata = {
-  title: {
-    default: 'BazPay',
-    template: '%s - BazPay',
-  },
-  description:
-    'Simplify your money game with BazPay! A modern, secure, and user-friendly payment solution for all your financial needs.',
-  twitter: {
-    card: 'summary_large_image',
-  },
-};
 
 export default function RootLayout({
   children,
