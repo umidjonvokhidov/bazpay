@@ -8,6 +8,11 @@ import OurFeatures from '@/sections/OurFeatures';
 import PricingV2 from '@/sections/PricingV2';
 import Security from '@/sections/Security';
 import TIandPO from '@/sections/TIandPO';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Home',
+};
 
 const Home = async () => {
   return (

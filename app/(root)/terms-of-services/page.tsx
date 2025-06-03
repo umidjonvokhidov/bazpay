@@ -1,3 +1,9 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Terms of Services',
+};
+
 const TermsOfServices = () => {
   return (
     <section className="container-main container-spacing-main">

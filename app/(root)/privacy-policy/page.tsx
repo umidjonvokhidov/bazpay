@@ -1,3 +1,9 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy',
+};
+
 const PrivacyPolicy = () => {
   return (
     <section className="container-main container-spacing-main">

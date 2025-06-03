@@ -6,6 +6,11 @@ import PricingV1 from '@/sections/PricingV1';
 import SecurityV2 from '@/sections/SecurityV2';
 import Stats from '@/sections/Stats';
 import Team from '@/sections/Team';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Home',
+};
 
 const Home = () => {
   return (
