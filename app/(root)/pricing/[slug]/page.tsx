@@ -18,7 +18,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PricingCardPageProps) {
-  const { slug } = await params;
+  const { slug } = params;
   const pricingCard = pricingCardV1(slug);
 
   return {
