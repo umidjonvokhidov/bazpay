@@ -12,6 +12,6 @@ export default function robots(): MetadataRoute.Robots {
         '/terms-of-services',
       ],
     },
-    sitemap: `${process.env.NEXT_PUBLIC_BASE_URL}/sitemap.xml`,
+    sitemap: `${process.env.PUBLIC_URL}/sitemap.xml`,
   };
 }

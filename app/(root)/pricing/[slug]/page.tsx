@@ -12,11 +12,15 @@ export async function generateStaticParams() {
   }));
 }
 
+interface PageProps {
+  params: {
+    slug: string;
+  };
+}
+
 export async function generateMetadata({
   params,
-}: {
-  params: { slug: string };
-}): Promise<Metadata> {
+}: PageProps): Promise<Metadata> {
   const { slug } = params;
   const pricingCard = pricingCardV1(slug);
 
@@ -32,11 +36,7 @@ const pricingCardV1 = cache((slug: string) => {
   return pricingCardsV1.find((plan) => plan.slug === slug);
 });
 
-export default async function PricingDetails({
-  params,
-}: {
-  params: { slug: string };
-}) {
+export default async function PricingDetails({ params }: PageProps) {
   const { slug } = params;
   const pricingCard = pricingCardV1(slug);
 

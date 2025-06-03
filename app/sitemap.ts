@@ -3,50 +3,50 @@ import { MetadataRoute } from 'next';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const postEntries: MetadataRoute.Sitemap = posts.map((post) => ({
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/blog/${post.slug}`,
+    url: `${process.env.PUBLIC_URL}/blog/${post.slug}`,
     lastModified: new Date(),
   }));
 
   const pricingEntries: MetadataRoute.Sitemap = pricingCardsV1.map((card) => ({
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/pricing/${card.slug}`,
+    url: `${process.env.PUBLIC_URL}/pricing/${card.slug}`,
     lastModified: new Date(),
   }));
 
   return [
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/about`,
+      url: `${process.env.PUBLIC_URL}/about`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/pricing`,
+      url: `${process.env.PUBLIC_URL}/pricing`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/contact`,
+      url: `${process.env.PUBLIC_URL}/contact`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/cookies`,
+      url: `${process.env.PUBLIC_URL}/cookies`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/features`,
+      url: `${process.env.PUBLIC_URL}/features`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/home`,
+      url: `${process.env.PUBLIC_URL}/home`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/license`,
+      url: `${process.env.PUBLIC_URL}/license`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/privacy-policy`,
+      url: `${process.env.PUBLIC_URL}/privacy-policy`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/terms-of-services`,
+      url: `${process.env.PUBLIC_URL}/terms-of-services`,
       lastModified: new Date(),
     },
     ...postEntries,
