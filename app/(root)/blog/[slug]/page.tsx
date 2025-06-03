@@ -1,14 +1,61 @@
-'use client';
-
+import NotFound from '@/app/not-found';
 import { posts } from '@/constants';
 import MobileApp from '@/sections/MobileApp';
+import { Metadata } from 'next';
 import Image from 'next/image';
-import { useParams } from 'next/navigation';
+import { cache } from 'react';
 import { twMerge } from 'tailwind-merge';
 
-const BlogDetails = () => {
-  const { slug } = useParams();
-  const blog = posts.find((post) => post.slug === slug);
+interface BlogPostPageProps {
+  params: {
+    slug: string;
+  };
+}
+
+export async function generateStaticParams() {
+  const blogPosts = posts;
+
+  return blogPosts.map((post) => ({
+    slug: post.slug,
+  }));
+}
+
+const getBlogPost = cache(async (slug: string) => {
+  return posts.find((post) => post.slug === slug);
+});
+
+export async function generateMetadata({
+  params: { slug },
+}: BlogPostPageProps): Promise<Metadata> {
+  const blog = await getBlogPost(slug);
+  return {
+    metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL as string),
+    title: blog ? blog.title : 'Blog Post',
+    description: blog ? blog.description : 'Read our latest blog post',
+    openGraph: {
+      images: [
+        {
+          url: blog?.image || '',
+        },
+      ],
+    },
+  };
+}
+
+export default async function BlogDetails({ params }: BlogPostPageProps) {
+  const { slug } = await params;
+  const blog = await getBlogPost(slug);
+
+  if (!blog) {
+    return (
+      <NotFound
+        title="Blog Not Found"
+        description="The blog post you are looking for does not exist."
+        href="/blog"
+        hrefTitle="Go to Blogs"
+      />
+    );
+  }
 
   return (
     <>
@@ -56,6 +103,4 @@ const BlogDetails = () => {
       <MobileApp />
     </>
   );
-};
-
-export default BlogDetails;
+}
