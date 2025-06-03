@@ -7,15 +7,9 @@ import { cache } from 'react';
 import { twMerge } from 'tailwind-merge';
 
 export async function generateStaticParams() {
-  return posts.map((post) => ({
-    slug: post.slug,
+  return posts.map(({ slug }: BlogPostProps) => ({
+    slug,
   }));
-}
-
-interface PageProps {
-  params: {
-    slug: string;
-  };
 }
 
 const getBlogPost = cache(async (slug: string) => {
@@ -24,11 +18,13 @@ const getBlogPost = cache(async (slug: string) => {
 
 export async function generateMetadata({
   params,
-}: PageProps): Promise<Metadata> {
-  const { slug } = params;
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
   const blog = await getBlogPost(slug);
   return {
-    metadataBase: new URL(process.env.PUBLIC_URL as string),
+    metadataBase: new URL(process.env.BASE_URL as string),
     title: blog ? blog.title : 'Blog Post',
     description: blog ? blog.description : 'Read our latest blog post',
     openGraph: {
@@ -41,8 +37,12 @@ export async function generateMetadata({
   };
 }
 
-export default async function BlogDetails({ params }: PageProps) {
-  const { slug } = params;
+export default async function BlogDetails({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
   const blog = await getBlogPost(slug);
 
   if (!blog) {

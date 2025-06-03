@@ -7,21 +7,17 @@ import { Metadata } from 'next';
 import { cache } from 'react';
 
 export async function generateStaticParams() {
-  return pricingCardsV1.map((plan) => ({
-    slug: plan.slug,
+  return pricingCardsV1.map(({ slug }: PricingCardProps) => ({
+    slug,
   }));
-}
-
-interface PageProps {
-  params: {
-    slug: string;
-  };
 }
 
 export async function generateMetadata({
   params,
-}: PageProps): Promise<Metadata> {
-  const { slug } = params;
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
   const pricingCard = pricingCardV1(slug);
 
   return {
@@ -36,8 +32,12 @@ const pricingCardV1 = cache((slug: string) => {
   return pricingCardsV1.find((plan) => plan.slug === slug);
 });
 
-export default async function PricingDetails({ params }: PageProps) {
-  const { slug } = params;
+export default async function PricingDetails({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
   const pricingCard = pricingCardV1(slug);
 
   if (!pricingCard) {
