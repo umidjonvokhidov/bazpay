@@ -34,7 +34,7 @@ const pricingCardV1 = cache((slug: string) => {
 });
 
 export default async function PricingDetails({ params }: PricingCardPageProps) {
-  const { slug } = await params;
+  const { slug } = params;
   const pricingCard = pricingCardV1(slug);
 
   if (!pricingCard) {

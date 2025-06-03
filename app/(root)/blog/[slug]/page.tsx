@@ -24,9 +24,8 @@ const getBlogPost = cache(async (slug: string) => {
   return posts.find((post) => post.slug === slug);
 });
 
-export async function generateMetadata({
-  params: { slug },
-}: BlogPostPageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
+  const { slug } = params;
   const blog = await getBlogPost(slug);
   return {
     metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL as string),
