@@ -11,6 +11,20 @@ const robotoFont = Roboto({
   subsets: ['latin'],
 });
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: {
+    default: 'BazPay',
+    template: '%s - BazPay',
+  },
+  description:
+    'Simplify your money game with BazPay! A modern, secure, and user-friendly payment solution for all your financial needs.',
+  twitter: {
+    card: 'summary_large_image',
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
