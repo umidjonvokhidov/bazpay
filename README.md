@@ -1,8 +1,6 @@
 # BazPay
 
-<p align="center">
-  <img src="./app/opengraph-image.png" alt="BazPay Open Graph image" width="600" />
-</p>
+![Open Graph Image](./app/opengraph-image.png)
 
 **All-in-one solution for easy transactions, quick money transfers, and total financial control!**
 
