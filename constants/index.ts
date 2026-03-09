@@ -197,12 +197,22 @@ export const posts: BlogPostProps[] = [
     details: `
       <h2>Simplifying Your Financial Journey with MezPay</h2>
       <p>Managing your finances can be overwhelming, but with the right tools and strategies, you can take control of your financial future. MezPay offers a user-friendly platform that helps you track expenses, set goals, and make smarter decisions.</p>
+      
       <h3>1. Centralized Dashboard</h3>
-      <p>View all your accounts and transactions in one place. MezPay’s dashboard provides a clear overview, making it easy to monitor your financial health.</p>
+      <p>View all your accounts and transactions in one place. MezPay's dashboard provides a clear overview, making it easy to monitor your financial health.</p>
       <p>Stay organized by categorizing your spending and identifying trends that matter most to you.</p>
+      
       <h3>2. Personalized Insights</h3>
       <p>MezPay analyzes your financial data to deliver actionable insights. Receive tailored suggestions to optimize your budget and maximize savings.</p>
+      
+      <h3>3. Goal-Tracking Features</h3>
+      <p>Set financial targets and watch your progress in real-time. Whether saving for a vacation or paying off debt, MezPay helps you achieve your objectives faster.</p>
+      
+      <h3>4. Security & Privacy</h3>
+      <p>Your financial data is encrypted with industry-standard protocols. Rest assured that your sensitive information is protected.</p>
+      
       <hr />
+      
       <h2>Benefits of a Simplified Financial Experience</h2>
       <p>With MezPay, you can:</p>
       <ul>
@@ -210,8 +220,10 @@ export const posts: BlogPostProps[] = [
         <li>Make informed decisions with real-time analytics</li>
         <li>Set and achieve financial goals with confidence</li>
         <li>Enjoy a seamless, intuitive user experience</li>
+        <li>Take control of your financial destiny</li>
       </ul>
-      <p>Start your journey to financial clarity and success with MezPay today.</p>
+      
+      <p>Start your journey to financial clarity and success with MezPay today. Sign up for a free trial and experience the difference.</p>
     `,
   },
   {
